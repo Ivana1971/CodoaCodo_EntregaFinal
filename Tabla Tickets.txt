@@ -1,0 +1,13 @@
+
+
+CREATE TABLE `tickets` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `nombre` varchar(50) DEFAULT NULL,
+  `apellido` varchar(50) DEFAULT NULL,
+  `mail` varchar(50) DEFAULT NULL,
+  `cant` int DEFAULT NULL,
+  `tipo_ticket` int DEFAULT NULL,
+  `total_facturado` float DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `mail` (`mail`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci
